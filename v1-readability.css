@@ -1,0 +1,16 @@
+@media(max-width:1000px){
+  .episode{grid-template-columns:1fr 1.7fr}.episode .under{grid-column:2}
+  .tabline{display:block}.tabline span,.tabline b{display:block}.tabline b{margin-top:4px}
+  .place,.foundation,.faq,.join-grid{gap:6%}.coast-card img{height:345px}.contact-grid{gap:7%}
+}
+@media(max-width:760px){
+  html{scroll-padding-top:74px}body{font-size:17px}.mast{height:64px}.brand{font-size:32px}.sun{width:30px}
+  .menu-toggle{width:45px;height:45px;display:grid;place-content:center;gap:6px}.menu-toggle span{display:block;width:25px;height:2px;background:currentColor}
+  .nav{display:none;position:absolute;top:100%;inset-inline:0;background:var(--paper);padding:14px var(--pad) 22px;border-bottom:1px solid var(--line)}.menu-open .nav{display:grid;gap:0}.nav a{padding:11px 0}.nav-contact{justify-self:start;margin-top:10px}
+  .hero{grid-template-columns:1fr;gap:28px;padding-block:30px 36px}.hero-copy{padding:0}.hero h1{font-size:clamp(52px,11vw,77px);margin:16px 0}.location{font-size:14px}.hero .btn{margin-top:19px}.postcard{padding-left:6%;padding-bottom:40px}.coast-card img{height:clamp(212px,49vw,330px)}.coast-card figcaption{font-size:13px}.detail-card{width:36%;max-width:185px;padding:5px}.detail-card figcaption{font-size:12px}
+  .section-head,.contact-grid{display:block}.section-head>p{margin-top:14px}.space-tabs{gap:9px;margin-top:22px}.space-tabs button{padding-bottom:10px}.space-tabs img{aspect-ratio:1.1}.tabline{margin-top:6px}.tabline span{font-size:14px}.tabline b{font-size:clamp(17px,3.65vw,25px);line-height:1.22}
+  .episode,.place,.foundation,.faq,.join-grid{display:grid;grid-template-columns:1fr;gap:24px}.episode{gap:11px;padding-top:20px}.episode .under{grid-column:auto}.episode h3{font-size:29px}.place-text>p:not(.kicker),.foundation p:not(.kicker){margin:15px 0}.coast-gallery{gap:8px}.coast-gallery button{min-height:115px}.coast-gallery button:first-child{border-radius:65px 0 0}.join-grid{margin-top:22px}.role-tabs button{padding:12px 0;font-size:18px}.foundation dl>div{grid-template-columns:1fr 1.3fr;font-size:16px}
+  .faq h2 br,.foundation h2 br,.contact h2 br{display:none}.faq h2 br:after{content:" "}.contact-body{margin-top:25px}.foot{align-items:flex-start}.foot p{max-width:180px}.gallery-bottom{padding:10px;font-size:14px}.contact-dialog{padding:25px 20px}.dialog-intro br{display:none}
+}
+@media(max-width:360px){.wrap{padding-inline:17px}.postcard{margin-inline:0}.detail-card figcaption{font-size:11px}.coast-card figcaption{font-size:12px}.btn{padding-inline:16px}.foundation dl>div{display:block}.tabline b{font-size:17px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
