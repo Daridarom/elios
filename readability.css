@@ -14,3 +14,5 @@
 }
 @media(max-width:360px){.wrap{padding-inline:17px}.postcard{margin-inline:0}.detail-card figcaption{font-size:11px}.coast-card figcaption{font-size:12px}.btn{padding-inline:16px}.foundation dl>div{display:block}.tabline b{font-size:17px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+
+@media(max-width:760px){.hero.wrap{display:block;min-height:0;padding-bottom:66vw;background:linear-gradient(to bottom,#f7f2e8 0%,#f7f2e8 54%,transparent 72%),url('assets/azov-light.webp') 70% bottom/auto 63% no-repeat}.hero h1{font-size:clamp(47px,10vw,67px)}.hero .lead{max-width:36em}.light-caption{font-size:12px}}
