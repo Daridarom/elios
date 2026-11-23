@@ -16,3 +16,19 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 
 @media(max-width:760px){.hero.wrap{display:block;min-height:0;padding-bottom:66vw;background:linear-gradient(to bottom,#f7f2e8 0%,#f7f2e8 54%,transparent 72%),url('assets/azov-light.webp') 70% bottom/auto 63% no-repeat}.hero h1{font-size:clamp(47px,10vw,67px)}.hero .lead{max-width:36em}.light-caption{font-size:12px}}
+
+/* Keep the photographic horizon visible beside the introduction. */
+.hero.wrap{display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr);gap:clamp(20px,4vw,76px);background:#f7f2e8;min-height:0;padding-block:clamp(30px,5vw,78px)}
+.shore-cover{margin:0;min-width:0}
+.shore-cover img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:2px}
+.shore-cover figcaption{margin-top:8px;color:#475552;font-size:14px}
+.shore-cover img,.coast-gallery img,.location-photo{filter:brightness(1.05) saturate(1.06)}
+.hero .btn{background:#255d5d}
+.coast-gallery button:first-child{border-radius:2px}
+.coast-gallery{grid-template-columns:1.3fr 1fr}
+@media(max-width:760px){
+  .hero.wrap{display:grid;grid-template-columns:1fr;gap:22px;padding-block:27px 30px;background:#f7f2e8}
+  .shore-cover img{aspect-ratio:3/2;object-position:50% 64%}
+  .coast-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .coast-gallery button:first-child{grid-column:1/-1;grid-row:auto;min-height:190px}
+}

@@ -138,6 +138,7 @@ const galleries = {
   concepts: [
     { key: 'home', file: 'home', caption: 'Личное пространство. Визуализация концепции будущего центра.' },
     { key: 'cafe', file: 'cafe', caption: 'Место для встреч. Визуализация концепции будущего центра.' },
+    { key: 'spa', file: 'spa', caption: 'Джакузи на террасе после парной. Архитектурная визуализация.' },
     { key: 'bath', file: 'bath', caption: 'Тишина и тепло. Визуализация концепции будущего центра.' }
   ],
   coast: [
@@ -156,6 +157,7 @@ function showGalleryImage(index) {
   galleryIndex = (index + galleryGroup.length) % galleryGroup.length;
   const item = galleryGroup[galleryIndex];
   galleryImage.src = `assets/${item.file}.webp`;
+  galleryImage.classList.toggle('location-photo', galleryGroup === galleries.coast);
   galleryImage.alt = item.caption;
   galleryCaption.textContent = item.caption;
   galleryCount.textContent = `${galleryIndex + 1} / ${galleryGroup.length}`;
